@@ -64,6 +64,7 @@ The results will be exported to `output_directory` as custom NumPy archives (`.n
 ## Step 4: creating a custom dataset
 Run our dataset preprocessing script from the `data` directory:
 ```
+cd data
 python prepare_data_2d_custom.py -i /path/to/detections/output_directory -o myvideos
 ```
 This creates a custom dataset named `myvideos` (which contains all the videos in `output_directory`, each of which is mapped to a different subject) and saved to `data_2d_custom_myvideos.npz`. You are free to specify any name for the dataset.
